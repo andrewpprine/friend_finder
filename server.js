@@ -1,7 +1,7 @@
 var express = require("express");
 var bodyParser = require("body-parser");
 
-var app = express(); //because cannot used until invoked
+var app = express(); //because cannot use until invoked
 
 var port = 8080;
 
