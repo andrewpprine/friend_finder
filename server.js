@@ -18,6 +18,11 @@ app.get('/',function(req,res){
    res.send('<h1>Welcome to the home screen!<h1>')
 });
 
+app.get('/home', function(req,res){
+   res.render('public/home');
+});
+
+
 var stack = {
    FrontEnd: 'HTML + CSS',
    BackEnd: 'node + Express + SQL',
