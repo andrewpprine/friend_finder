@@ -16,12 +16,9 @@ app.use(bodyParser.json());
 app.use(express.static("public"));
 
 app.get('/',function(req,res){
-   res.send('<h1>Welcome to the home screen!<h1>')
+   res.send('<h1>Hello world!<h1>')
 });
 
-app.get("/testing", function(req,res){
-	res.send("Hello world!");
-})
 
 // app.get('/home', function(req,res){
 //    res.render('public/home');
