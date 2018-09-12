@@ -11,16 +11,22 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 app.listen(port,function(){
-   console.log('We are listening on port:' + port);
+   console.log('listening on port:' + port);
 });
+
+app.use(express.static("app/public"));
 
 app.get('/',function(req,res){
    res.send('<h1>Welcome to the home screen!<h1>')
 });
 
-app.get('/home', function(req,res){
-   res.render('public/home');
-});
+app.get("/testing", function(req,res){
+	res.send("Hello world!");
+})
+
+// app.get('/home', function(req,res){
+//    res.render('public/home');
+// });
 
 
 var stack = {
