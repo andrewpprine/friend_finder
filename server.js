@@ -20,17 +20,8 @@ app.get('/',function(req,res){
 
 
 // app.get('/home', function(req,res){
-//    res.render('public/home');
+//    res.send('/home');
 // });
-
-
-
-
-
-
-
-
-
 
 
 
@@ -39,6 +30,8 @@ app.get('/',function(req,res){
 app.listen(port,function(){
    console.log('listening on port:' + port);
 });
+
+
 
 
 
