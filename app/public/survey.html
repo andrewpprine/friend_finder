@@ -10,6 +10,42 @@
    <title>Document</title>
 </head>
 <body>
-   <h1>survey page</h1>
-</body>
+   <div class="container-fluid">	
+      <h1>Survey</h1>
+      <form method="POST" action="/user">
+         <div class="row">  
+            <div class="col-lg">
+               <label>First and last name</label>
+               <input type="text" placeholder="" name="name" required>
+               <!-- <label>Link to Photo of You(Required)</label>
+               <input type="url" placeholder="" name="photo_link" required> -->
+               <!-- <label>What is your gender?</label>
+               <input type="text" placeholder="Male/Female", name="gender" required>
+               <input type="text" name="userscore" id="hide"> -->
+            </div>        
+         </div> 
+      
+      <div class="row">
+          <h3>Question 1:</h3>
+      </div>
+      <div class="row">
+          <div class="col-lg-3">
+              <h5>What best describes your personality?</h5>    
+          </div>
+          <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle drop1" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Dropdown button
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <button class="dropdown-item dropOpt" type="button" data-num="1" data-sum="1">Charming and Genuine</button>
+                      <button class="dropdown-item dropOpt" type="button" data-num="1" data-sum="2">Funny and Cute</button>
+                      <button class="dropdown-item dropOpt" type="button" data-num="1" data-sum="3">Outgoing and Spontaneous</button>
+                      <button class="dropdown-item dropOpt" type="button" data-num="1" data-sum="4">Serious and Dark</button>
+                  </div>
+          </div> 
+      </div>
+      
+      <button type="submit" class="execute">Submit</button>
+  </form>
+</div></body>
 </html>

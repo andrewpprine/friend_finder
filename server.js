@@ -35,9 +35,6 @@ app.listen(port,function(){
 
 
 
-
-
-
 var stack = {
    FrontEnd: 'HTML + CSS',
    BackEnd: 'node + Express + SQL',
